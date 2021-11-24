@@ -12,86 +12,86 @@
     <script src="formulario/js/popper.min.js"></script>
     <script src="formulario/js/bootstrap.min.js"></script>
     <!------------- Css ------------->
-    <link rel="stylesheet" href="css/Estilo-Grid-formulario.css">
+    <link rel="stylesheet" href="css/Estilo-Boostrap.css">
     <title>Insumos Pueyrredon-Formulario</title>
      <!------------- Favicon ------------->
      <link rel="icon" href="img/INSUMOS PUEYRREDON.ico">
-     
+     <!-------------- Logos -------------->
+     <script src="https://kit.fontawesome.com/a6be479372.js" crossorigin="anonymous"></script>
 </head>
-<body class="container">
+<body class="container-fluid">
         <!------------- Header ------------->
         <header class="row">
             <h1>Insumos Pueyrredon</h1>
         </header>
         <!------------- Nav ------------->
-        <nav class="row justify-content-around">
+        <nav class="row justify-content-between">
             <!------------- Icono ------------->
-            <div class="col-2"><h2><a href="index.html" target="_blank" title="Inicio"><i class="far fa-arrow-alt-circle-right"></i>&nbsp Inicio</a></h2></div>
-            <div class="col-2"><h2><a href="productos.html" target="_blank" title="Productos"><i class="far fa-arrow-alt-circle-right"></i>&nbsp Productos</a></h2></div>
-            <div class="col-2"><h2><a href="quienesSomos.html" target="_blank" title="Conocenos"><i class="far fa-arrow-alt-circle-right"></i>&nbsp Conocenos</a></h2></div>
-            <div class="col-2"><h2><a href="contacto.html" target="_blank" title="Contacto"><i class="far fa-arrow-alt-circle-right"></i>&nbsp Contacto</a></h2></div>
-            <div class="col-2"><h2><a href="comoLlegar.html" target="_blank" title="Como llegar"><i class="far fa-arrow-alt-circle-right"></i>&nbsp Como Llegar</a></h2></div>
+            <div class="col-sm-12 col-md-2 "><h2><a href="index.html" target="_blank" title="Inicio"><i class="far fa-arrow-alt-circle-right"></i>&nbsp Inicio</a></h2></div>
+            <div class="col-sm-12 col-md-2 "><h2><a href="productos.html" target="_blank" title="Productos"><i class="far fa-arrow-alt-circle-right"></i>&nbsp Productos</a></h2></div>
+            <div class="col-sm-12 col-md-2"><h2><a href="quienesSomos.html" target="_blank" title="Conocenos"><i class="far fa-arrow-alt-circle-right"></i>&nbsp Conocenos</a></h2></div>
+            <div class="col-sm-12 col-md-2"><h2><a href="contacto.html" target="_blank" title="Contacto"><i class="far fa-arrow-alt-circle-right"></i>&nbsp Contacto</a></h2></div>
+            <div class="col-sm-12 col-md-2"><h2><a href="comoLlegar.html" target="_blank" title="Como llegar"><i class="far fa-arrow-alt-circle-right"></i>&nbsp Como Llegar</a></h2></div>
         </nav>
     <!------------- Section ------------->
     <section class="row">
         <!------------- Aside ------------->
-        <aside class="col-md-4">
+        <aside class="col-sm-12">
             <h3>Novedades</h3>
-            <br>
             <!------------- Fotos ------------->
             <img src="img/INSUMOS PUEYRREDON.png" alt ="Insumos Pueyrredon" width="100px" height="100px">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate corporis quasi cumque facere impedit deserunt accusamus neque veritatis, eaque nesciunt totam obcaecati rerum ullam ad voluptas dolores? Exercitationem, necessitatibus?</p>    
+            <p>Completa el formulario con tus datos y te contactaremos.</p>
+            <p>Recibiras por e-mail el catalogo de nuestros productos y las ofertas.</p>      
         </aside>
         <!------------- Main ------------->
-        <main class="col-md-8">
+        <main class="row">
+            <br><br><br><br>
             <h3>Formulario de contacto</h3>
             <!------------- Formulario ------------->
-            <form class="formulario" id="formulario" name="formulario" action="">
+            <form class="col-sm-12" id="formulario" name="formulario" action="">
                 <div class="form-group">
                 <label for="nombre">Nombre:</label>
-                <input class="form-control" id="nombre" type="text" name="nombre" placeholder="Ingrese nombre" size="60" maxlength="100"/>
+                <input class="form-control" id="nombre" type="text" name="nombre" placeholder="Ingrese nombre" size="60" maxlength="100">
                 <br>
                 <label for="apellido">Apellido:</label>
-                <input class="form-control" id="apellido" type="text" name="apellido" placeholder="Ingrese apellido" size="60" maxlength="100"/>
+                <input class="form-control" id="apellido" type="text" name="apellido" placeholder="Ingrese apellido" size="60" maxlength="100">
                 <br>
                 <label for="telefono">Telefono:</label>
-                <input class="form-control"  id="telefono" type="tel" name="telefono" placeholder="Ingrese telefono" size="15" maxlength="50"/>
+                <input class="form-control"  id="telefono" type="tel" name="telefono" placeholder="Ingrese telefono" size="15" maxlength="50">
                 <br>
                 <label for="direccion">Direccion:</label>
-                <input class="form-control"  id="direccion" type="text" name="direccion" placeholder="Ingrese direccion"/>
+                <input class="form-control"  id="direccion" type="text" name="direccion" placeholder="Ingrese direccion">
                 <br>
                 <label for="email">Email:</label>
-                <input class="form-control"  id="email" type="email" name="email" placeholder="Ingrese email"/>
+                <input class="form-control"  id="email" type="email" name="email" placeholder="Ingrese email">
                 <br>
                 <label for="comentario">Comentarios:</label>
                 <textarea class="form-control" rows="3" id="comentario" type="text" name="comentario" placeholder="Ingrese comentarios"></textarea>
                 </div>
                 <br><br>
-            <div class="row justify-content-around">
+            <!------------- Checkbox ------------->
+            <div class="row">
                 <label>
                 <input type="checkbox"> Recordarme
                 </label>
-                <input type="submit" class="btn btn-primary" value="enviar" name="enviar" id="enviar"></input>
+                <input type="submit" class="btn btn-primary" value="enviar" name="enviar" id="enviar">
             </div>
               </form>
             <br>        
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo doloremque explicabo possimus aliquid
-                nostrum,
-                quisquam est eaque totam ex ad aperiam vitae illum dolor impedit, ipsum beatae, quia natus? Vero?</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam voluptas eos quo cum natus et
-                saepe
-                optio quam sed esse nostrum, ipsam architecto explicabo. Excepturi nisi provident non quos!</p>
-            <br>
+            <p>Gracias por confiar en nosotros...</p>
         </main>
         <!------------- Footer ------------->
-        <footer class="row">
-            <h4>footer</h4>
+        <footer class="col-sm-12">
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum omnis eaque qui ea mollitia 
-                necessitatibus quae cupiditate quis vero quo ut, corporis obcaecati itaque nesciunt eligendi 
-                suscipit soluta nostrum doloribus?</p>
+            <h4>Conocenos en las redes</h4>
+            <p>Mira todos nuestros productos y promociones, no te pierdas los sorteos sorpresa y las ofertas semanales que tenemos para vos.</p>
         <!------------- Links paginas Webs ------------->
+        <div class="logos">
+            <a title="whatsapp" href="https://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp-square" alt="Logo Whatsapp"></i></a>
+            <a title="facebook" href="https://www.facebook.com/Insumos-VP-100346355389936/posts" target="_blank"><i class="fab fa-facebook-square" alt="Logo Facebook"></i></a>
+            <a title="instagram" href="https://www.instagram.com/insumos.pueyrredon/" target="_blank"><i class="fab fa-instagram" alt="Logo Instagram"></i></a>
+            <a title="youtube" href="https://www.youtube.com/?hl=es-419&gl=AR" target="_blank"><i class="fab fa-youtube" alt="Logo Youtube"></i></a>  
+        </div>
         </footer>
     </section>
 </body>
